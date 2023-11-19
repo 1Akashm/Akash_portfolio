@@ -6,6 +6,8 @@
 body
 {
     background-color: rgb(31, 31, 33);
+    font-family: 'Roboto Mono', monospace;
+
 }
 
 .header
@@ -156,6 +158,25 @@ hr{
 }
 
 
+@media screen and (min-width:1000px){
+    .wrapper
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper h1
+    {
+        margin-top: 10%;
+    }
+
+    .info_me
+    {
+        width: 60%;
+    }
+}
+
+
 /* Skills */
 
 .wrapper_skill
@@ -218,16 +239,21 @@ hr{
 
 .project_header span
 {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     color: rgb(176, 176, 179);
 }
 
 .project_header button
 {
-    margin: 0 0 5% 5% ;
+    margin: 2px 0 5% 5% ;
     padding: .5rem;
 }
 
+/* button a
+{
+    color: rgb(176, 176, 179);
+    text-decoration: none;
+} */
 
 .wrapper_project{
     width: 100%;
@@ -270,6 +296,11 @@ hr{
         
     }
 
+    .project_header span
+    {
+        font-size: 3rem;
+        font-weight: 900;
+    }
     .wrapper_project div img
     {
         margin: 0 5%;
@@ -289,7 +320,7 @@ hr{
 
 .container_contact {
     width: 100%;
-    background-color: rgb(40, 42, 40); 
+    background-color: rgb(40, 42, 40);
 }
 
 .container_contact .contact
@@ -311,6 +342,11 @@ hr{
 {
     
     text-align: center;
+}
+
+fieldset
+{
+    margin-bottom: 2%;
 }
 
 .wrapper_contact {
@@ -428,8 +464,6 @@ legend {
        width: 25%;
        margin-left: 35%;
     }
-
-
 
     .wrapper_contact {
         width: 50%;

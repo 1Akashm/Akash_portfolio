@@ -1,0 +1,439 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: rgb(31, 31, 33);
+}
+
+.header
+{
+    display: block;
+}
+
+.name{
+    text-align: center;
+}
+
+.name a
+{
+    text-decoration: none;
+    color: rgb(90, 90, 93);
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx
+{
+    margin: .5rem .5rem .5rem 0;
+    font-size: 24px;
+    color: rgb(176, 176, 179);
+}
+
+.bx:hover{
+    color: rgb(124, 179, 124);
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.info_me{
+    font-weight: 900;
+    color: rgb(227, 226, 226);
+    font-size: 2.2rem;
+    margin: 0 10%;
+}
+
+.img_me
+{
+    opacity: .7;
+    height: 30rem;
+    width: 80%;
+    max-width: 500px;
+    height: 10%;
+    margin-left: 10%;
+    filter: grayscale(50%);
+}
+
+.underline
+{
+    border-bottom: 4px solid rgb(113, 194, 113);
+    padding-bottom: 2px;
+}
+
+.wrapper p
+{
+    font-weight: 100;
+    margin-top: 2%;
+    font-size: 1rem;
+    text-align: center;
+}
+button {
+    position: relative;
+    color: rgb(227, 226, 226);
+    border: 1px solid rgb(113, 194, 113); /* Start with a transparent border */
+    padding: 2%;
+    margin-bottom: 3%;
+    background-color: transparent;
+    outline: none;
+    overflow: hidden;
+    margin-left: 35%;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(113, 194, 113);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  button:hover::before {
+    width: 100%;
+  }
+  
+  button:hover {
+    border-color: transparent /* Set the border color on hover */
+  }
+
+hr{
+    border-top: 1px solid rgb(37, 152, 184);
+    margin: 2% 3%;
+}
+
+@media screen and (min-width:48rem) {
+    .header
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1rem;
+    }
+
+    .wrapper
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 2%;
+    }
+
+    .wrapper h1
+    {
+        margin: 15% 0 0 2%;
+    }
+
+    .img_me
+    {
+        width: 55%;
+        height: 50%;
+        border-radius: 50%;
+        margin: 0 1rem 0 0 ;
+    }
+
+    .info_me
+    {
+        font-size: 2.5rem;
+    }
+
+    .wrapper p
+    {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    button{
+        margin: 0;
+    }
+}
+
+
+/* Skills */
+
+.wrapper_skill
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(227, 226, 226);
+}
+
+.wrapper_skill div
+{
+    margin-top: 3%;
+}
+
+.wrapper_skill div h1
+{
+    text-align: center;
+}
+
+.wrapper_skill div p
+{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.wrapper_skill div:nth-child(4) p
+{
+    margin-bottom: 10%;
+}
+
+@media screen and (min-width: 48rem) {
+    .wrapper_skill
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+    }
+
+    .wrapper_skill div{
+        width: 50%;
+    }
+
+    .wrapper_skill div:nth-child(4) p
+    {
+        margin: 0;
+        margin-top: 2%;
+    }
+}
+
+/* project */
+.project_header
+{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3%;
+}
+
+.project_header span
+{
+    font-size: 2.5rem;
+    color: rgb(176, 176, 179);
+}
+
+.project_header button
+{
+    margin: 0 0 5% 5% ;
+    padding: .5rem;
+}
+
+
+.wrapper_project{
+    width: 100%;
+}
+
+.wrapper_project div
+{
+    margin-bottom: 2%;
+}
+
+.wrapper_project div h1
+{
+    color: rgb(246, 246, 251);
+    margin-left: 5%;
+}
+
+.wrapper_project div p
+{
+    color: rgb(176, 176, 179);
+    margin-left: 5%;
+}
+
+.wrapper_project div img
+{
+    width: 90%;
+    margin: 0 5%;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .wrapper_project{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .wrapper_project div{
+        width: 50%;
+        
+    }
+
+    .wrapper_project div img
+    {
+        margin: 0 5%;
+    }
+
+    .wrapper_project div:nth-child(1) h1{
+        margin-top: 2%;
+    }
+
+    .wrapper_project div:nth-child(3) h1{
+        margin-top: 5%;
+    }
+}
+
+
+/* contact */
+
+.container_contact {
+    width: 100%;
+    background-color: rgb(40, 42, 40); 
+}
+
+.container_contact .contact
+{
+    color: rgb(176, 176, 179);
+    width: 75%;
+    margin: 0 auto 5%;
+}
+
+.container_contact .contact h1
+{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.container_contact .contact p
+{
+    
+    text-align: center;
+}
+
+.wrapper_contact {
+    width: 90%;
+    max-width: 768px;
+    color: rgb(246, 246, 251);
+    border: none;
+    background-color: transparent;
+    outline: none;
+    position: relative;
+    margin: 0 5%;
+}
+
+legend {
+    margin-left: 2%;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.input_box {
+    margin-top: 20px;
+    position: relative;
+}
+
+.input_box input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    width: 70%; 
+    margin-top:20px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.input_box label {
+    position: absolute;
+    left: 25px;
+    top: 10px;
+    transition: 0.3s;
+}
+
+.input_box input:focus ~ label,
+.input_box input:valid ~ label {
+    top: -10px;
+    font-size: 1rem; /* Adjusted font size when input is focused or has content */
+    color: rgb(113, 194, 113); /* Highlight color when input is focused or has content */
+}
+
+.input_box i {
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    transform: translateY(-50%);
+    color: grey;
+    font-size: 1.2rem;
+}
+
+.input_box:focus
+{
+    border-bottom: 1px solid rgb(113, 194, 113);
+}
+
+@media screen and (min-width:768px) {
+    .wrapper_contact {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    form button
+    {
+        margin: 0 40%;
+        margin-bottom: 2%;
+    }
+
+    .input_box i
+    {
+        right: 20%;
+    }
+
+    .container_contact .contact p
+    {
+        margin: auto;
+        width: 50%;
+    }
+}   
+
+@media screen and (min-width:1000px) {
+.container_contact
+{
+    display: flex;
+}
+
+.container_contact .contact{
+        width: 45%;
+    }
+
+    .container_contact .contact h1
+    {
+        text-align: left;
+        margin-top: 20%;
+        margin-left: 10%;
+    }
+
+    .container_contact .contact p
+    {
+        text-align: left;
+        width: 80%;
+    }
+
+
+    form button
+    {
+       width: 25%;
+       margin-left: 35%;
+    }
+
+
+
+    .wrapper_contact {
+        width: 50%;
+    }
+}
+
+
